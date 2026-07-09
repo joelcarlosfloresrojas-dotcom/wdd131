@@ -4,36 +4,35 @@
     background-color: black;
     padding: 20px;    
 }
+
 ul a{
     color: white;
     text-decoration: none;
 }
+
 header {
     background-color: gray;
 }
+
 h1 {
     padding: 20px;
-
 }
 
 .grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
     height: 400px;
-    
 }
 
 .gray{
     background-color: gray;
     padding: 20px;
-  
 }
 
 .black{
     background-color: white;
     color: black;
     padding: 20px;
-    
 }
 
 footer{
@@ -42,4 +41,3 @@ footer{
     height: 100px;
     color: white;
 }
-
