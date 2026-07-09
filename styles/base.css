@@ -58,6 +58,18 @@ nav a {
     
 }
 
+.card h1, .card h2, .helper p {
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+    background-color: #1e40af;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
 nav a:hover {
     color: #0f766e;            
     background-color: #ffffff;
