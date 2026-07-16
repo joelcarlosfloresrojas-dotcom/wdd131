@@ -1,0 +1,30 @@
+
+@media (min-width: 600px) {
+    header {
+        flex-wrap: nowrap; 
+    }
+
+    #menu { 
+        display: none; 
+    }
+
+    #course-title.hide {
+        display: block; 
+    }
+
+    .navigation { 
+        display: flex;
+        flex-direction: row; 
+        width: auto; 
+        padding-top: 0; 
+        gap: 15px; 
+        
+    }
+
+    .navigation a {
+        padding: 5px;
+        display: inline-block; 
+        width: auto;
+        font-size: 1rem; 
+    }
+}
