@@ -3,10 +3,10 @@ document.getElementById("lastModified").textContent = `Last Modified: ${document
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
-const courseTitle = document.querySelector('#course-title'); // Seleccionamos el título
+const courseTitle = document.querySelector('#course-title');
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
-    courseTitle.classList.toggle('hide'); /
+    courseTitle.classList.toggle('hide');
 });
