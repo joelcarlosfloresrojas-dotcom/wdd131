@@ -1,0 +1,58 @@
+@media (min-width: 601px) {
+    body {
+        max-width: 960px; 
+    }
+
+    main {
+        position: relative; 
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .relative1{
+        position: absolute;
+        top: 70px;
+    }
+
+    .relative{
+        position: absolute;
+        top: 200px;
+        right: 10px;
+    }
+
+    .div1, .div2 {
+        flex: 1;              
+        max-width: 280px;     
+    }
+    .small{
+        display: flex;
+        gap:1px;
+        
+    }
+
+   /* Ocultamos la imagen móvil para no duplicarla */
+    .small img {
+        display: none;
+    }
+
+   
+    .div2 h3 {
+        position: relative;
+        width: 130px; 
+    }
+
+
+    .div2 h3::after {
+        content: "";
+        position: absolute;
+        width: 42px; 
+        height: 100%; 
+        background-color: #2e7d32; 
+        background-image: url('../images/partly_cloudy.svg'); 
+        background-size: 80%; 
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 0;
+        right: -15px;
+    }
+}

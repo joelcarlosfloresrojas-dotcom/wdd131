@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a home page for the class.">
+    <meta name="author" content="Joel Flores">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>    
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 601px)" srcset="images/machu_picchu.webp">
+            <img src="images/lima_peru.webp" alt="Costa verde">
+        </picture> 
+
+        <article class="grider">  
+            <div class="relative1">
+            <div class="div1"> 
+                <h2>Data</h2>
+                <ul class="data-list">
+                    <li><strong>Area:</strong> 1,285,216 sq km</li>
+                    <li><strong>Population:</strong> 34,922,148</li>
+                    <li><strong>Capital:</strong> Lima</li>
+                    <li><strong>Languages:</strong> Spanish, Quechua, Aymara</li>
+                    <li><strong>Currency:</strong> Sol</li>
+                    <li><strong>Time Zone:</strong> UTC-5</li>
+                    <li><strong>Calling Code:</strong> +51</li>
+                    <li><strong>Internet TLD:</strong> .pe</li>
+                </ul>
+            </div>
+            </div>
+            <div class="relative">
+            <div class="div2"> 
+                <div class="small">
+                <h3>Weather</h3>      
+                <img src="images/partly_cloudy.svg" alt="Weather">
+                </div>
+                <ul class="data-list">
+                    <li><strong>Temperature:</strong><span id="temperature">24°C</span></li>
+                    <li><strong>Conditions:</strong> Mostly Cloudy</li>
+                    <li><strong>Wind:</strong><span id="speed">9.7 km/h</span></li>
+                    <li><strong>Wind Chill:</strong><span id="chill"></span></li>
+                </ul>
+            </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy;Joel Flores Rojas Peru <span id="currentyear"></span> </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
