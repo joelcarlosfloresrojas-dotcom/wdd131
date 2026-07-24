@@ -1,15 +1,22 @@
+:root {
+    --peru-red: rgb(230, 46, 46);
+    --peru-red-dark: rgb(225, 48, 48); 
+    --peru-white: white;
+    --peru-off-white: rgb(244, 241, 241); 
+}
+
 * { 
     margin: 0; 
     padding: 0;    
     box-sizing: border-box; 
 }
 
-header{
-    border-bottom: 10px solid rgb(244, 241, 241);
+header {
+    border-bottom: 10px solid var(--peru-off-white);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: "Roboto", sans-serif;
     max-width: 600px; 
     margin: 0 auto;   
     background-color: #f4f4f4; 
@@ -17,9 +24,9 @@ body {
 
 h1 {
     text-align: center;
-    background-color: rgb(230, 46, 46); 
+    background-color: var(--peru-red); 
     padding: 15px;
-    color: white;
+    color: var(--peru-white);
 }
 
 img {
@@ -46,8 +53,8 @@ img {
 }
 
 h2, h3 {
-    background-color: rgb(230, 46, 46); 
-    color: white;
+    background-color: var(--peru-red); 
+    color: var(--peru-white);
     text-align: left;
     padding: 8px 15px;
     
@@ -89,10 +96,10 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
-    background-color: rgb(230, 46, 46); 
-    color: white; 
+    background-color: var(--peru-red); 
+    color: var(--peru-white); 
 }
 
-picture img,source{
-    border-bottom: 5px solid rgb(225, 48, 48);
+picture img, source {
+    border-bottom: 5px solid var(--peru-red-dark);
 }
