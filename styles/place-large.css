@@ -30,7 +30,7 @@
         
     }
 
-   /* Ocultamos la imagen móvil para no duplicarla */
+   
     .small img {
         display: none;
     }
@@ -47,7 +47,7 @@
         position: absolute;
         width: 42px; 
         height: 100%; 
-        background-color: rgb(230, 46, 46); /* Changed from green */
+        background-color: rgb(230, 46, 46); 
         background-image: url('../images/partly_cloudy.svg'); 
         background-size: 80%; 
         background-repeat: no-repeat;
