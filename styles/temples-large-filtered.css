@@ -15,21 +15,22 @@
         display: flex;
     }
 
+    .navigation a {
+        padding: 5px 10px;
+        display: inline-block; 
+        width: auto;
+        font-size: 1rem; 
+    }
+
     .navigation a:hover {
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 5px;
     }
 
-    #temple-galery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-    .navigation a {
-        padding: 5px;
-        display: inline-block; 
-        width: auto;
-        font-size: 1rem; 
+    #temple-galery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
     }
 }

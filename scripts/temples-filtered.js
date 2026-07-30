@@ -11,7 +11,7 @@ hamButton.addEventListener('click', () => {
     courseTitle.classList.toggle('hide');
 });
 
-const title1=document.getElementById("title")
+const title1 = document.getElementById("title");
 const temples = [
     {
     templeName: "Aba Nigeria",
@@ -98,7 +98,7 @@ const temples = [
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/400x250/2-3c2316607190934fc0265f4107b5013b0cc4b21e.jpeg"
   },
 ];
- const helper=document.getElementById("temple-galery");
+ const helper = document.getElementById("temple-galery");
 
  function DisplayImages(list){
     helper.innerHTML = "";
@@ -120,44 +120,49 @@ const temples = [
     helper.appendChild(info);
     });
  }
- DisplayImages(temples)
+ DisplayImages(temples);
 
 
-const oldbutton=document.getElementById("btn-old")
+const oldbutton = document.getElementById("btn-old");
 
-oldbutton.addEventListener("click", () => {
-    title1.textContent="Old"
-    const oldTemples = temples.filter(templeold=> templeold.dedicated.split(",")[0]<1900)
-    DisplayImages(oldTemples)
+oldbutton.addEventListener("click", (e) => {
+    e.preventDefault();
+    title1.textContent = "Old";
+    const oldTemples = temples.filter(templeold => templeold.dedicated.split(",")[0] < 1900);
+    DisplayImages(oldTemples);
 });
 
-const newbutton =document.getElementById("btn-new")
+const newbutton = document.getElementById("btn-new");
 
-newbutton.addEventListener("click",()=>{
-    title1.textContent="New"
-    const newtemples=temples.filter(templesnew=> templesnew.dedicated.split(",")[0]>2000)
-    DisplayImages(newtemples)
+newbutton.addEventListener("click", (e) => {
+    e.preventDefault();
+    title1.textContent = "New";
+    const newtemples = temples.filter(templesnew => templesnew.dedicated.split(",")[0] > 2000);
+    DisplayImages(newtemples);
 });
 
-const smallbutton=document.getElementById("btn-small")
+const smallbutton = document.getElementById("btn-small");
 
-smallbutton.addEventListener("click",() =>{
-    title1.textContent="Small"
-    const smallTemples=temples.filter(templesSmall=>templesSmall.area<10000)
-    DisplayImages(smallTemples)
+smallbutton.addEventListener("click", (e) => {
+    e.preventDefault();
+    title1.textContent = "Small";
+    const smallTemples = temples.filter(templesSmall => templesSmall.area < 10000);
+    DisplayImages(smallTemples);
 });
 
-const largeButton=document.getElementById("btn-large")
+const largeButton = document.getElementById("btn-large");
 
-largeButton.addEventListener("click",()=>{
-    title1.textContent="Large"
-    const largeTemples=temples.filter(templesLarge=>templesLarge.area>90000)   
-    DisplayImages(largeTemples) 
+largeButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    title1.textContent = "Large";
+    const largeTemples = temples.filter(templesLarge => templesLarge.area > 90000);   
+    DisplayImages(largeTemples); 
 });
 
-const homeButton=document.getElementById("btn-home")
+const homeButton = document.getElementById("btn-home");
 
-homeButton.addEventListener("click",() =>{
-    title1.textContent="Home"
-    DisplayImages(temples)
+homeButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    title1.textContent = "Home";
+    DisplayImages(temples);
 });
