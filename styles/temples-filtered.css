@@ -1,0 +1,200 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+}
+
+header, main, footer { 
+    max-width: 840px;
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #3b0764; 
+    padding: 15px 20px; 
+    position: relative; 
+    border-top: 5px solid #333333;
+}
+
+#course-title { 
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    display: block;
+}
+
+#menu { 
+    display: none; 
+}
+
+.navigation { 
+    display: flex; 
+    gap: 15px; 
+}
+
+    .navigation button { 
+        background-color: transparent; 
+        border: none;                  
+        color: #ffffff; 
+        font-family: inherit; 
+        font-size: 1rem;
+        padding: 8px 12px;
+        cursor: pointer;               
+        border-radius: 5px; 
+        transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+
+.navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation button:active {
+    transform: scale(0.95); 
+}
+
+h1 {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.griduu { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+    place-items: center; 
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    color: #3b0764;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+footer { 
+    background-color: #1e3a8a; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 40px; 
+    border-radius: 8px; 
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    #menu { 
+        display: block; 
+        font-size: 2rem; 
+        background: none; 
+        border: none; 
+        color: #ffffff; 
+        cursor: pointer; 
+        position: absolute; 
+        top: 10px;
+        right: 20px;
+    }
+
+    #menu::before { content: "☰"; }
+    #menu.open::before { content: "✕"; }
+
+    #course-title.hide {
+        display: none;
+    }
+
+    .navigation { 
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background: #3b0764; 
+        text-align: center;
+        padding-top: 10px; 
+    }
+
+    .navigation.open { 
+        display: flex; 
+    }
+
+    .navigation a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+#temple-galery { 
+        display: flex;
+        flex-direction: column; 
+        width: auto; 
+        padding-top: 0; 
+        gap: 15px; 
+    }
+
+#temple-galery section {
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc; 
+    padding: 1.5rem;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 2. Ajuste del título */
+#temple-galery h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+#temple-galery p {
+    margin: 0.1rem 0;
+    font-size: 1rem;
+}
+
+
+#temple-galery strong {
+    color: #4a2c5a; 
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+#temple-galery img {
+    margin-top: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); 
+}
