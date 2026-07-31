@@ -1,0 +1,31 @@
+* { 
+    margin: 0; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+header, main, footer { 
+    max-width: 840px;
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+body {
+    background-color: #F9F6F0;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #A63A28;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    color: #2E7D32;
+}
+
+
+@media (min-width: 600px) {
+
+}
