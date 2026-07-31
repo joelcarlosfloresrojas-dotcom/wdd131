@@ -26,6 +26,12 @@ a {
     color: #2E7D32;
 }
 
+img {
+    width: 100%;      
+    display: block;   
+    object-fit: cover; 
+}
+
 
 @media (min-width: 600px) {
 
