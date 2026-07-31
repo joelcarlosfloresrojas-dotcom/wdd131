@@ -115,6 +115,8 @@ const temples = [
             src="${temple.imageUrl}" 
             alt="${temple.templeName} Temple" 
             loading="lazy" 
+            width="400" 
+            height="250"
             >
         `;
     helper.appendChild(info);
