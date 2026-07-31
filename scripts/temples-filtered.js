@@ -102,9 +102,10 @@ const temples = [
 
  function DisplayImages(list){
     helper.innerHTML = "";
-    list.forEach(temple => {
+    const fragment = document.createDocumentFragment();
 
-        const info = document.createElement("section")
+    list.forEach(temple => {
+        const info = document.createElement("section");
 
        info.innerHTML = `
             <h3>${temple.templeName}</h3>
@@ -119,8 +120,10 @@ const temples = [
             height="250"
             >
         `;
-    helper.appendChild(info);
+        fragment.appendChild(info);
     });
+    
+    helper.appendChild(fragment);
  }
  DisplayImages(temples);
 
