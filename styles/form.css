@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+   
+}
+
+body{
+    width: 600px;
+    font-family: "Roboto", sans-serif;
+   
+    padding: 5px;
+    
+}
+
+input [type='submit']{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+div{
+    padding-left: 20px;
+    padding-top: 10px;
+  
+}
+
+
+form{
+    background-color: rgb(172, 178, 180);
+    margin-top: 10px;
+}
+header{
+    background-color: rgb(126, 17, 222);
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+}
+
+.fixer{
+    display:flex;
+}
+
+fixer1{
+    display:flex;
+    flex-direction: column;
+}
+.flexer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    align-items: center;
+    align-text: center;
+    
+}
+
+fieldset{
+    border: none;
+    
+}

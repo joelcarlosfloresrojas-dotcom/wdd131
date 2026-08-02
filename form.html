@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form - Joel Flores</title>
+    <meta name="author" content="Joel Flores">
+    <meta name="description" content="This is Product Review Form designed by Joel Flores to help the user choose what he wants and rate it.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head> 
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="form.html">
+        <div>
+            <legend>Product Name:</legend>
+            <select name="product-name" id="product-name" required>
+                <option value="" id="placeholder" disabled selected>Select a Product...</option>
+            </select>
+        </div>
+        <div>
+            <legend>Overall Rating:</legend>
+            <div class="fixer">
+                <div class="flexer">
+                <label>☆</label>
+                <input type="radio" name="rating" value="1" required>
+                </div>
+                <div class="flexer">
+                <label>☆☆</label>
+                <input type="radio" name="rating" value="2" required>
+                </div>
+                <div class="flexer">
+                <label>☆☆☆</label>
+                <input type="radio" name="rating" value="3" required>
+                </div>
+                <div class="flexer">
+                <label>☆☆☆☆</label>
+                <input type="radio" name="rating" value="4" required>
+                </div>
+                <div class="flexer">
+                <label>☆☆☆☆☆</label>
+                <input type="radio" name="rating" value="5" required>
+                </div>
+            </div>
+        </div>
+            <div>
+                <legend>Date of Installation</legend>
+                <input type="date" name="installation-date" id="installation-date" required>
+            </div>
+            <div>Which features do find useful on this product?</div>
+            <div>(check all that apply)</div>
+           <div class="fixer1">
+                <div >
+                    <input type="checkbox" name="features" value="durability">
+                    <label>Durability</label>
+                </div>
+                <div >
+                    <input type="checkbox" name="features" value="ease-of-use">
+                    <label>Ease of use</label>
+                </div>
+                <div >
+                    <input type="checkbox" name="features" value="performance">
+                    <label>Performance</label>
+                </div>
+                <div >
+                    <input type="checkbox" name="features" value="design">
+                    <label>Design</label>
+                </div>
+            </div>
+        <div>
+            <legend>Written review (optional)</legend>
+            <textarea name="written-review" id="written-review" cols="30" rows="10" placeholder="Write your review here..."></textarea>
+        </div>
+        <div>
+            <legend>Your Name</legend>
+            <input type="text" name="name" id="name" placeholder="Enter your name...">
+        </div>
+        <input type="submit" value="Post Review" id="submit-button">
+    </form>
+        
+    <footer>
+        <p>&copy; <span id="currentyear"></span>  Joel Flores Rojas  Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    </main>
+</body>
+</html>
