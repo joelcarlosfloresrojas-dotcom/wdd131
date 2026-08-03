@@ -40,11 +40,13 @@ products.forEach((product) => {
     productSelect.appendChild(option);
 });
 
-let number=Number(window.localStorage.getItem("number")) || 0;
-const button = document.getElementById("submit-button");
-button.addEventListener("click", (event) => {
-      number++;
-      localStorage.setItem("number", number);
+let number = Number(window.localStorage.getItem("number")) || 0;
+const form = document.querySelector("form");
+form.addEventListener("submit", (event) => {
+    number++;
+    localStorage.setItem("number", number);
+    setTimeout(() => {
+        form.reset(); 
+    }, 10); 
 });
-
   
