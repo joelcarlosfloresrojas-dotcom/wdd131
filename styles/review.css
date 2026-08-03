@@ -1,0 +1,41 @@
+main {
+    background-color: #d6cfd6;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #3b0e2b;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#review-counter {
+    background-color: #3b0e2b;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    font-size: 0.9rem;
+}

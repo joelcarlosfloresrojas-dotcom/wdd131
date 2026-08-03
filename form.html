@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
 </head> 
 <body>
@@ -18,38 +19,38 @@
     </header>
     <main>
         <form method="get" action="review.html">
-        <div>
-            <label for="product-name">Product Name:</label>
+        <div class="flexer">
+            <label for="product-name">Product Name:</label>  
             <select name="product-name" id="product-name" required>
                 <option value="" id="placeholder" disabled selected>Select a Product...</option>
-            </select>
+            </select>   
         </div>
         <div>
             <label>Overall Rating:</label>
             <div class="fixer">
-                <div class="flexer">
+                <div class="flexer1">
                 <label for="rating-1">☆</label>
                 <input type="radio" name="rating" value="1" id="rating-1" required>
                 </div>
-                <div class="flexer">
+                <div class="flexer1">
                 <label for="rating-2">☆☆</label>
                 <input type="radio" name="rating" value="2" id="rating-2"    required>
                 </div>
-                <div class="flexer">
+                <div class="flexer1">
                 <label for="rating-3">☆☆☆</label>
                 <input type="radio" name="rating" value="3" id="rating-3" required>
                 </div>
-                <div class="flexer">
+                <div class="flexer1">
                 <label for="rating-4">☆☆☆☆</label>
                 <input type="radio" name="rating" value="4" id="rating-4" required>
                 </div>
-                <div class="flexer">
+                <div class="flexer1">
                 <label for="rating-5">☆☆☆☆☆</label>
                 <input type="radio" name="rating" value="5" id="rating-5" required>
                 </div>
             </div>
         </div>
-            <div>
+            <div class="flexer">
                 <label for="installation-date">Date of Installation</label>
                 <input type="date" name="installation-date" id="installation-date" required>
             </div>
@@ -73,12 +74,12 @@
                     <label for="feature-design">Design</label>
                 </div>
             </div>
-        <div>
+        <div class="flexer">
             <label for="written-review">Written review (optional)</label>
             <textarea name="written-review" id="written-review" cols="30" rows="10" placeholder="Write your review here..."></textarea>
         </div>
-        <div>
-            <label for="name">Your Name</label>
+        <div class="flexer">
+            <label for="name">Your Name (optional)</label>
             <input type="text" name="name" id="name" placeholder="Enter your name...">
         </div>
         <input type="submit" value="Post Review" id="submit-button">

@@ -1,60 +1,132 @@
-*{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0 auto;
-   
-}
-
-body{
-    width: 600px;
+    width: 100%;
     font-family: "Roboto", sans-serif;
-   
-    padding: 5px;
-    
+    padding: 15px; 
 }
 
-input [type='submit']{
-    margin-top: 10px;
+input[type='submit'] {
+    margin-top: 20px;
     margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding: 15px;
+    width: 100%; 
+    background-color: #3b0e2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-div{
-    padding-left: 20px;
-    padding-top: 10px;
-  
+div {
+    padding-top: 15px; 
 }
 
+form {
+    background-color: #d6cfd6; 
+    margin-top: 0;
+    padding: 20px 30px 30px 30px; 
+    border-radius: 0 0 5px 5px;
+}
 
-form{
-    background-color: rgb(172, 178, 180);
+header {
+    background-color: #3b0e2b; 
     margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
 }
-header{
-    background-color: rgb(126, 17, 222);
-    margin-top: 10px;
-}
-h1{
+
+h1 {
     text-align: center;
+    color: white; 
 }
 
-.fixer{
-    display:flex;
-}
-
-fixer1{
-    display:flex;
-    flex-direction: column;
-}
-.flexer{
+.fixer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  
-    align-items: center;
-    align-text: center;
-    
+    gap: 20px; 
 }
 
-fieldset{
+.fixer .flexer1 {
+    align-items: center; 
+}
+
+.flexer1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    text-align: left;
+    width: 100%;
+}
+
+.flexer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    text-align: left;
+    width: 100%;
+}
+
+.flexer label{
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+fieldset {
     border: none;
-    
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.fixer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.fixer1 input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.fixer1 label {
+    font-weight: normal;
+}
+
+footer {
+    background-color: #3b0e2b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border-radius: 0 0 5px 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #e0d0db;
 }
