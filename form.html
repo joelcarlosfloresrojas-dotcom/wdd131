@@ -19,66 +19,66 @@
     <main>
         <form method="get" action="review.html">
         <div>
-            <legend>Product Name:</legend>
+            <label for="product-name">Product Name:</label>
             <select name="product-name" id="product-name" required>
                 <option value="" id="placeholder" disabled selected>Select a Product...</option>
             </select>
         </div>
         <div>
-            <legend>Overall Rating:</legend>
+            <label>Overall Rating:</label>
             <div class="fixer">
                 <div class="flexer">
-                <label>☆
-                <input type="radio" name="rating" value="1" id="rating-1" required></label>
+                <label for="rating-1">☆</label>
+                <input type="radio" name="rating" value="1" id="rating-1" required>
                 </div>
                 <div class="flexer">
-                <label>☆☆
-                <input type="radio" name="rating" value="2" id="rating-2"    required></label>
+                <label for="rating-2">☆☆</label>
+                <input type="radio" name="rating" value="2" id="rating-2"    required>
                 </div>
                 <div class="flexer">
-                <label>☆☆☆
-                <input type="radio" name="rating" value="3" id="rating-3" required></label>s
+                <label for="rating-3">☆☆☆</label>
+                <input type="radio" name="rating" value="3" id="rating-3" required>
                 </div>
                 <div class="flexer">
-                <label>☆☆☆☆</label>
+                <label for="rating-4">☆☆☆☆</label>
                 <input type="radio" name="rating" value="4" id="rating-4" required>
                 </div>
                 <div class="flexer">
-                <label>☆☆☆☆☆</label>
+                <label for="rating-5">☆☆☆☆☆</label>
                 <input type="radio" name="rating" value="5" id="rating-5" required>
                 </div>
             </div>
         </div>
             <div>
-                <legend>Date of Installation</legend>
+                <label for="installation-date">Date of Installation</label>
                 <input type="date" name="installation-date" id="installation-date" required>
             </div>
             <div>Which features do find useful on this product?</div>
             <div>(check all that apply)</div>
            <div class="fixer1">
-                <div >
-                    <input type="checkbox" name="features" value="durability">
-                    <label>Durability</label>
+                <div>
+                    <input type="checkbox" name="features" value="durability" id="feature-durability">
+                    <label for="feature-durability">Durability</label>
                 </div>
-                <div >
-                    <input type="checkbox" name="features" value="ease-of-use">
-                    <label>Ease of use</label>
+                <div>
+                    <input type="checkbox" name="features" value="ease-of-use" id="feature-ease">
+                    <label for="feature-ease">Ease of use</label>
                 </div>
-                <div >
-                    <input type="checkbox" name="features" value="performance">
-                    <label>Performance</label>
+                <div>
+                    <input type="checkbox" name="features" value="performance" id="feature-performance">
+                    <label for="feature-performance">Performance</label>
                 </div>
-                <div >
-                    <input type="checkbox" name="features" value="design">
-                    <label>Design</label>
+                <div>
+                    <input type="checkbox" name="features" value="design" id="feature-design">
+                    <label for="feature-design">Design</label>
                 </div>
             </div>
         <div>
-            <legend>Written review (optional)</legend>
+            <label for="written-review">Written review (optional)</label>
             <textarea name="written-review" id="written-review" cols="30" rows="10" placeholder="Write your review here..."></textarea>
         </div>
         <div>
-            <legend>Your Name</legend>
+            <label for="name">Your Name</label>
             <input type="text" name="name" id="name" placeholder="Enter your name...">
         </div>
         <input type="submit" value="Post Review" id="submit-button">
