@@ -17,23 +17,38 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="experiences.html">Experiences</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="story">
+        <picture>
+            <source media="(min-width: 601px)" srcset="../images/happy-large.jpg">
+            <img src="../images/happy-cuzco.jpg" alt="Cuzco Family"  height="400">
+        </picture> 
+        <p>Booking my vacation with Discovering Cuzco was the best decision I could have made for my trip to Peru. From the moment we arrived, their team handled every single detail, leaving us free to just soak in the beauty of the Andes without any stress. The guides were deeply passionate and shared incredible stories about the history and culture of the sites we visited, making the ancient ruins come alive. Every transfer, meal, and hike was perfectly organized. It was truly a once-in-a-lifetime experience, and I cannot recommend their services enough!</p>
+
+        </div>
         <form method="get" action="review.html">
             <fieldset>
                 <legend>Information</legend>
+                <div class="flexer2">
                 <label for="fname">First Name*</label>
                 <input type="text id="fname" required>
+                </div>
+                <div>
                 <label for="lname">Last Name*</label>
                 <input type="text" id="lname" required>
+                </div>
+                <div>
                 <label for="email">e-mail*</label>
                 <input type="email" id="email" required>
+                </div>
+                <div>
                 <label for="number">Phone Number*</label>
                 <input type="tel" id="number" required>
+                </div>
             </fieldset>
             <fieldset>
             <legend>Message Purpose</legend>

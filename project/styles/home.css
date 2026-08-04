@@ -1,8 +1,45 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
+}
 
+
+.data-list{
+    display: flex;
+    flex-direction: column;
+}
+.styler{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.background{
+background-color: rgb(189, 64, 64); 
+padding: 25px;
+}
+
+h4,h5{
+    background-color: rgb(147, 36, 36); 
+    color: rgb(251, 251, 251);
+    text-align: left;
+    padding: 8px 15px;
+    
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-bottom: 25px;
+    width: 80%; 
+    
+    font-size: 1.4rem;           
+    font-weight: normal;
 }
 
 body {

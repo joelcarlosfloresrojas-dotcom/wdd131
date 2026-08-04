@@ -6,8 +6,256 @@
     <title>Discovering Cuzco - Trips Page - Joel Flores</title>
     <meta name="description" content="Explore our guided tours and unique travel experiences in Cuzco, Peru. Join us on an unforgettable journey through this historic city.">
     <meta name="author" content="Joel Flores">
+    <link rel="stylesheet" href="styles/trips.css">
+    <script src="scripts/trips.js" defer></script>
 </head>
 <body>
+     <header>
+        <img src="../images/logo.jpg" alt="Discovering Cuzco Logo" height="100" width="100">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<table>
+  <caption>Discovering Cuzco - Trips Information</caption>
+  <thead>
+    <tr>
+      <th>Place</th>
+      <th>Rating</th>
+      <th>Basic Plan</th>
+      <th>Premium Plan</th>
+      <th>Tour Itinerary & Review</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Macchu Picchu</td>
+      <td>⭐⭐⭐⭐⭐</td>
+      <td>$90</td>
+      <td>$180</td>
+      <td>Train ride, full guided citadel tour, and free time for photography.</td>
+    </tr>
+    <tr>
+      <td>Inka Paths</td>
+      <td>⭐⭐⭐⭐⭐</td>
+      <td>$400</td>
+      <td>$650</td>
+      <td>4-day scenic trek through the Andes, ending at the Sun Gate.</td>
+    </tr>
+    <tr>
+      <td>Sacsayhuaman</td>
+      <td>⭐⭐⭐⭐</td>
+      <td>$30</td>
+      <td>$60</td>
+      <td>Half-day guided walking tour of the massive stone fortress and nearby ruins.</td>
+    </tr>
+    <tr>
+      <td>Seven Colours Mountain</td>
+      <td>⭐⭐⭐⭐</td>
+      <td>$45</td>
+      <td>$85</td>
+      <td>Early departure, scenic hike to the summit, and oxygen support included.</td>
+    </tr>
+    <tr>
+      <td>Ollantaytambo</td>
+      <td>⭐⭐⭐⭐⭐</td>
+      <td>$40</td>
+      <td>$75</td>
+      <td>Sacred Valley exploration, including the ancient ruins and local market.</td>
+    </tr>
+    <tr>
+      <td>Another One (Custom Tour)</td>
+      <td>No ratings yet</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Customizable city tour around the main plaza and local museums.</td>
+    </tr>
+  </tbody>
+</table>
+<div class="organize">
+<label for="option">Which one do you want to have more information about</label>
+<select name="selector" id="option" required>
+    <option value="" id="placeholder" disabled required>Select a Place</option>
+
+</select>
+</div>
+
+<table class="hidden">
+  <caption>Macchu Picchu - Tourist Logistics</caption>
+  <thead>
+    <tr>
+      <th>Information</th>
+      <th>Details for Travelers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>How to Get There</strong></td>
+      <td>Train from Ollantaytambo to Aguas Calientes, then a 30-minute bus ride up the mountain.</td>
+    </tr>
+    <tr>
+      <td><strong>Booking Requirements</strong></td>
+      <td>Tickets sell out fast. Must be booked months in advance. Original passport is required for entry.</td>
+    </tr>
+    <tr>
+      <td><strong>Guide Policy</strong></td>
+      <td>An official tour guide is highly recommended (and sometimes strictly required) for your first entry.</td>
+    </tr>
+    <tr>
+      <td><strong>Facilities & Rules</strong></td>
+      <td>No bathrooms inside the citadel (use them before entering). No tripods, drones, or walking sticks allowed.</td>
+    </tr>
+    <tr>
+      <td><strong>Time Needed</strong></td>
+      <td>A standard guided circuit takes about 2.5 to 3 hours.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="hidden1">
+  <caption>Inka Paths - Trekking Essentials</caption>
+  <thead>
+    <tr>
+      <th>Information</th>
+      <th>Details for Travelers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Permit Availability</strong></td>
+      <td>Strictly limited to 500 people per day (including porters). Must book 6+ months in advance.</td>
+    </tr>
+    <tr>
+      <td><strong>Physical Demand</strong></td>
+      <td>High. Involves steep, uneven stone steps and high altitude. Pre-trip fitness training is highly advised.</td>
+    </tr>
+    <tr>
+      <td><strong>Accommodation & Meals</strong></td>
+      <td>Tent camping for 3 nights. Meals are prepared by our trekking chefs.</td>
+    </tr>
+    <tr>
+      <td><strong>Luggage</strong></td>
+      <td>Porters carry the main gear. You only need to carry a daypack with water, snacks, and a camera.</td>
+    </tr>
+    <tr>
+      <td><strong>Closures</strong></td>
+      <td>The trail is entirely closed every February for heavy rain and maintenance.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="hidden2">
+  <caption>Sacsayhuaman - Visitor Guide</caption>
+  <thead>
+    <tr>
+      <th>Information</th>
+      <th>Details for Travelers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Distance from City Center</strong></td>
+      <td>A 10-minute taxi ride, or a steep but scenic 30-minute walk from the Cusco Plaza de Armas.</td>
+    </tr>
+    <tr>
+      <td><strong>Entry Ticket</strong></td>
+      <td>Requires the "Boleto Turístico" (Cusco Tourist Ticket). You cannot buy a single-entry ticket just for this site.</td>
+    </tr>
+    <tr>
+      <td><strong>Best Time to Visit</strong></td>
+      <td>Early morning to beat the crowds, or late afternoon for a spectacular sunset view over the city of Cusco.</td>
+    </tr>
+    <tr>
+      <td><strong>What to Bring</strong></td>
+      <td>Sunscreen, a hat, and a light jacket (the wind picks up in the afternoon).</td>
+    </tr>
+    <tr>
+      <td><strong>Time Needed</strong></td>
+      <td>1.5 to 2 hours to walk among the massive zig-zag walls and explore the viewpoints.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="hidden3">
+  <caption>Seven Colours Mountain - What to Expect</caption>
+  <thead>
+    <tr>
+      <th>Information</th>
+      <th>Details for Travelers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Departure Time</strong></td>
+      <td>Tours start very early. Expect a hotel pickup between 3:30 AM and 4:30 AM.</td>
+    </tr>
+    <tr>
+      <td><strong>Acclimatization</strong></td>
+      <td>Crucial. You must spend at least 2 full days in Cusco before attempting this hike to avoid severe altitude sickness.</td>
+    </tr>
+    <tr>
+      <td><strong>Weather Conditions</strong></td>
+      <td>Extremely unpredictable. It can be sunny, snowing, and freezing all in one hour. Dress in warm layers.</td>
+    </tr>
+    <tr>
+      <td><strong>Horse Rentals</strong></td>
+      <td>If you get tired, locals rent horses along the trail for an extra fee (covers about 80% of the uphill climb).</td>
+    </tr>
+    <tr>
+      <td><strong>Safety & Support</strong></td>
+      <td>Our guides carry emergency oxygen tanks and first-aid kits at all times.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="hidden4">
+  <caption>Ollantaytambo - Travel Tips</caption>
+  <thead>
+    <tr>
+      <th>Information</th>
+      <th>Details for Travelers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Strategic Location</strong></td>
+      <td>Home to the main train station. Many travelers explore these ruins right before catching the train to Machu Picchu.</td>
+    </tr>
+    <tr>
+      <td><strong>Altitude Advantage</strong></td>
+      <td>At 2,792m, it is significantly lower than Cusco. It is a great place to stay your first few nights to breathe easier.</td>
+    </tr>
+    <tr>
+      <td><strong>Entry Ticket</strong></td>
+      <td>Requires the "Boleto Turístico" (Cusco Tourist Ticket).</td>
+    </tr>
+    <tr>
+      <td><strong>Physical Effort</strong></td>
+      <td>Exploring the main sun temple requires climbing over 200 steep, massive stone steps. Go slowly!</td>
+    </tr>
+    <tr>
+      <td><strong>Local Vibe</strong></td>
+      <td>The town itself is a living Inca city with original water channels, cobblestone streets, and a great craft market.</td>
+    </tr>
+  </tbody>
+</table>
+<div class="hidden5">
+    <a href="contact.html" id="btn-trip" class="btn">Tell Us Where!</a>
+</div>
+
+
+    </main>
+
+     <footer>
+        <p>&copy;Joel Flores Rojas Peru <span id="currentyear"></span> </p>
+        <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>

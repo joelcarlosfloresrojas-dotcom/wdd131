@@ -130,10 +130,12 @@ img[alt="Cuzco Safety"] {
     padding: 10px;
 }
 
+
+
 h2{
     position: absolute;
     top: 250px;      
-    width: 100%;     
+    width: 70%;     
     color: #160303;
     background-color: #8c3b29;
     text-align: center;     
@@ -153,7 +155,7 @@ h3,h4{
 #hello1 {
     position: absolute;
     top: 350px;
-    left: 30%;
+    left: 34%;
     right: 15%;
     width: 500px;
     background-color: rgba(30, 58, 138, 0.5); 

@@ -1,9 +1,22 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
+div .story {
+    width: 400px;
+}
+.flexer2 {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+   
+}
+
+div .flexer2{
+  
+}
 body {
     background-color: #cbb898;
     font-family: 'Lato', sans-serif;
@@ -70,4 +83,18 @@ footer {
 
 .hidden1,.hidden2,.hidden3,.hidden4{
     display: none;
+}
+
+.story{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media (min-width: 601px) {
+    picture img {
+        width: 80%;
+        height: auto; 
+        margin:0 auto;
+        display: block;
+    }
 }
