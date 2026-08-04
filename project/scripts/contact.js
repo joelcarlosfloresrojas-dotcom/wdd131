@@ -38,16 +38,33 @@ array_tour.forEach((tour)=>{
     select.appendChild(op);
 });
 
+const radios = document.querySelectorAll('input[name="purpose"]');
+
+const sectionMap = {
+    'general': '.hidden1',
+    'booking': '.hidden2',
+    'custom': '.hidden3',
+    'feedback': '.hidden4'
+};
 
 
-const radioButtons = document.querySelectorAll('input[name="purpose"]');
+function Hider() {
 
-radioButtons.forEach(radio=>{
-    radio.addEventListener('change',function(){
+    radios.forEach(radioElement => {
+        const targetDiv = document.querySelector(sectionMap[radioElement.value]);
+       
+        if (radioElement.checked) {
+            targetDiv.style.display = 'block';
+        } else {
+            targetDiv.style.display = 'none';
+        }
+    });
+}
 
 
-
-    })
-
-
+radios.forEach(radioElement => {
+    radioElement.addEventListener('change', Hider);
 });
+
+
+Hider();

@@ -68,15 +68,6 @@ footer {
     margin-top: 40px; 
 }
 
-.hidden1{
-    display: none;
-}
-.hidden2{
-    display: none;
-}
-.hidden3{
-    display: none;
-}
-.hidden4{
+.hidden1,.hidden2,.hidden3,.hidden4{
     display: none;
 }

@@ -59,12 +59,12 @@
             </div>
         </fieldset>
         <div class="hidden1">
-        <label for="general">General Inquiry</label>
+        <label for="general"></label>
         <textarea name="general" id="inquiry" cols="30" rows="10"></textarea>
         </div>
         <div class="hidden2">
-        <label for="general">General Inquiry</label>
-        <textarea name="general" id="inquiry" cols="30" rows="10"></textarea>
+        <label for="trip">Start Day of the Trip</label>
+        <input type="date" name="trip" id="trip-date" required>
         </div>
         <div class="hidden3">
         <label for="tour"></label> 
@@ -74,10 +74,29 @@
         </select> 
         </div>
         <div class="hidden4">
-        <label for="feedback">General Inquiry</label>
+        <label for="feedback"></label>
         <textarea name="feedback" id="support" cols="30" rows="10"></textarea>
         </div>
-
+        <fieldset>
+            <legend>How did you hear about Us?</legend>
+            <div>
+                <input type="checkbox" name="source" value="search-engine" id="source-search">                    
+                <label for="source-search">Search Engine (Google, Bing)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="source" value="social-media" id="source-social">
+                <label for="source-social">Social Media (Instagram, TikTok, Facebook)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="source" value="friend-family" id="source-friend">
+                <label for="source-friend">Recommended by Friend/Family</label>
+            </div>
+            <div>
+                <input type="checkbox" name="source" value="advertisement" id="source-ad">
+                <label for="source-ad">Online Advertisement</label>
+            </div>        
+        </fieldset>
+        <input type="submit" value="Get in touch" id="submit-button">
         </form>
     </main>
 
