@@ -1,0 +1,35 @@
+@media(min-width:601px){
+    
+
+header {
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+#hello1 {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 500px;
+    margin-top: -300px;
+    font-size: 1.1rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px; 
+
+}
+picture img{
+    margin-top: 10px;
+    margin:0 auto;
+    display: block;
+    width: 90%;
+    border-radius: 0.8rem;
+   
+}
+}

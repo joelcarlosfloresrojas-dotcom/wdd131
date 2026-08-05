@@ -17,3 +17,6 @@ if (NTemperature1 <= 10 && NSpeed1 > 4.8) {
 } else {
     Chill.textContent = "N/A";
 }
+
+const button3=document.createElement('button');
+button3.textContent('')

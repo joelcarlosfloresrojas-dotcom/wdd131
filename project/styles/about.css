@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +6,18 @@
 }
 
 body {
-    background-color: #cbb898;
+    background-color: #eaddcc; 
     font-family: 'Lato', sans-serif;
     color: #4a3c31; 
     line-height: 1.6;
-    padding: 30px 0;
+    padding: 20px 10px;
 }
 
+
 header, main, footer {
+    width: 95%;
+    max-width: 750px; 
     margin: 0 auto;
-    width: 600px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -22,19 +25,23 @@ header, main, footer {
 header {
     background-color: #0f6496;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 15px 25px;
     margin-bottom: 25px;
+    gap: 15px;
 }
 
-
-nav {
-    padding-top: 5px;
+.logo {
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-ul {
+nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px; 
 }
 
@@ -44,11 +51,11 @@ li {
 
 li a {
     text-decoration: none;
-    color: #4a3c31;             
+    color: #ffffff;             
     background-color: transparent;         
     border-radius: 6px;        
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     display: inline-block; 
     padding: 8px 12px;    
     transition: all 0.3s ease; 
@@ -56,57 +63,130 @@ li a {
 
 li a:hover {
     background-color: #8c3b29; 
-    color: #ffffff;          
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(140, 59, 41, 0.2); 
 }
 
-img[alt="Cuzco Family"] {
+main {
+    background-color: #fdfbf7;
+    padding-bottom: 40px;
+    overflow: hidden; 
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1e3a8a; 
+    padding: 30px 20px 10px;
+    
+}
+h2{
+    margin-bottom: 10px;
+}
+h2, h3, h4 {
+    color: #ffffff;
+    background-color: #8c3b29;
+    text-align: center;     
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section h2 {
     width: 100%;
-    height: 380px;
-    object-fit: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
-h1{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#look{
+#hello1 {
+    width: 90%;
+    background-color: rgba(30, 58, 138, 0.95); 
+    color: #ffffff; 
     text-align: center;
     padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    margin-top: -40px; 
+    z-index: 10;
 }
+
+#hello1 {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 65%;
+    margin-top: -300px;
+    font-size: 1.1rem;
+}
+
+
+#look {
+    text-align: center;
+    padding: 20px 30px;
+}
+
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;       
-    margin-top: 30px;  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;       
+    padding: 20px 30px; 
 }
 
-.grid p {
-    margin-top: 0;      
+.safety-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+picture img{
+    margin-top: 10px;
+    margin:0 auto;
+    display: block;
+    width: 90%;
+    border-radius: 0.8rem;
+   
 }
 
 
 #btn-trip {
     display: block; 
     width: max-content; 
-    margin: 40px 25px 30px auto; 
+    margin: 30px auto 10px auto; 
     background-color: #8c3b29;
     color: white;
     text-decoration: none;
-    padding: 14px 28px;
+    padding: 16px 32px;
     border-radius: 30px; 
     font-weight: bold;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     text-align: center;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 6px 15px rgba(140, 59, 41, 0.25);
-    margin-bottom: 10px;
+}
+
+#btn-trip:hover {
+    background-color: #6a2a1d;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(140, 59, 41, 0.35);
 }
 
 footer { 
@@ -116,54 +196,3 @@ footer {
     padding: 25px; 
     margin-top: 40px; 
 }
-
-#btn-trip:hover {
-    background-color: #6a2a1d;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(140, 59, 41, 0.35);
-}
-
-img[alt="Cuzco Safety"] {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-
-
-h2{
-    position: absolute;
-    top: 250px;      
-    width: 70%;     
-    color: #160303;
-    background-color: #8c3b29;
-    text-align: center;     
-    margin: 0;
-    width: 600px;
-    margin-top: 10px;
-}
-h3,h4{
-    width: 100%;     
-    color: #160303;
-    background-color: #8c3b29;
-    text-align: center;     
-    margin: 0;
-    width: 600px;
-    margin-top: 10px;
-}
-#hello1 {
-    position: absolute;
-    top: 350px;
-    left: 34%;
-    right: 15%;
-    width: 500px;
-    background-color: rgba(30, 58, 138, 0.5); 
-    color: #160303; 
-    text-align: center;
-    padding: 20px;
-    border-radius: 12px;
-    line-height: 1.6;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-

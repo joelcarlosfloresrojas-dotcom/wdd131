@@ -46,10 +46,19 @@ const sectionMap = {
     'custom': '.hidden3',
     'feedback': '.hidden4'
 };
+const text=document.getElementById('inquiry');
+const text1=document.getElementById('support');
+const date =document.getElementById('trip-date');
 
+function cleaner(){
+      text.value="";
+      text1.value="";
+      date.value = ""; 
+      select.value = "";
+}
 
 function Hider() {
-
+      cleaner();
     radios.forEach(radioElement => {
         const targetDiv = document.querySelector(sectionMap[radioElement.value]);
        
@@ -63,8 +72,7 @@ function Hider() {
 
 
 radios.forEach(radioElement => {
-    radioElement.addEventListener('change', Hider);
+    radioElement.addEventListener('change',Hider);
 });
-
 
 Hider();
