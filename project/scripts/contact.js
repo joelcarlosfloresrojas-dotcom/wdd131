@@ -1,7 +1,6 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-
 const array_tour = [
   {
     name: "Macchu Picchu",
@@ -24,55 +23,46 @@ const array_tour = [
     rating: 5
   },
   {
-    name:"Another One",
+    name: "Another One",
     rating: 0
   },
 ];
 
-const select=document.getElementById('tourist')
-array_tour.forEach((tour)=>{
-
-    const op=document.createElement("option");
-    op.value=tour.rating;
-    op.textContent=tour.name;
+const select = document.getElementById('tourist');
+array_tour.forEach((tour) => {
+    const op = document.createElement("option");
+    op.value = tour.rating;
+    op.textContent = tour.name;
     select.appendChild(op);
 });
 
 const radios = document.querySelectorAll('input[name="purpose"]');
 
 const sectionMap = {
-    'general': '.hidden1',
-    'booking': '.hidden2',
-    'custom': '.hidden3',
-    'feedback': '.hidden4'
+    'general': { selector: '.hidden1', input: document.getElementById('inquiry') },
+    'booking': { selector: '.hidden2', input: document.getElementById('trip-date') },
+    'custom':  { selector: '.hidden3', input: document.getElementById('tourist') },
+    'feedback':{ selector: '.hidden4', input: document.getElementById('support') }
 };
-const text=document.getElementById('inquiry');
-const text1=document.getElementById('support');
-const date =document.getElementById('trip-date');
-
-function cleaner(){
-      text.value="";
-      text1.value="";
-      date.value = ""; 
-      select.value = "";
-}
 
 function Hider() {
-      cleaner();
     radios.forEach(radioElement => {
-        const targetDiv = document.querySelector(sectionMap[radioElement.value]);
+        const config = sectionMap[radioElement.value];
+        const targetDiv = document.querySelector(config.selector);
        
         if (radioElement.checked) {
             targetDiv.style.display = 'block';
+            config.input.setAttribute('required', 'required');
         } else {
             targetDiv.style.display = 'none';
+            config.input.removeAttribute('required');
+            config.input.value = "";
         }
     });
 }
 
-
 radios.forEach(radioElement => {
-    radioElement.addEventListener('change',Hider);
+    radioElement.addEventListener('change', Hider);
 });
 
 Hider();
@@ -88,3 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
         logo.classList.toggle('hide');
     });
 });
+
+const form = document.querySelector("form");
+
+    
+setTimeout(() => {
+        form.reset(); 
+    }, 10); 
