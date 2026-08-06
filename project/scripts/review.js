@@ -1,13 +1,22 @@
+const counterDisplay = document.getElementById("review-counter");
+const previousSubmission = localStorage.getItem("lastSubmission");
 
-let number = Number(window.localStorage.getItem("number")) || 0;
+const now = new Date();
+const formattedDate = now.toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit"
+});
 
+if (previousSubmission) {
+  counterDisplay.textContent = `Your previous submission was on ${previousSubmission}`;
+} else {
+  counterDisplay.textContent = "This is your first form submission. Thanks for reaching out!";
+}
 
-number++;
+localStorage.setItem("lastSubmission", formattedDate);
 
-localStorage.setItem("number", number);
-
-
-document.getElementById("review-counter").textContent = number;
-
-document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("currentyear").textContent = now.getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
