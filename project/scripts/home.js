@@ -18,5 +18,14 @@ if (NTemperature1 <= 10 && NSpeed1 > 4.8) {
     Chill.textContent = "N/A";
 }
 
-const button3=document.createElement('button');
-button3.textContent('')
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu');
+    const navMenu = document.querySelector('nav');
+    const logo = document.querySelector('header img');
+
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('open');
+        navMenu.classList.toggle('open');
+        logo.classList.toggle('hide');
+    });
+});

@@ -1,4 +1,4 @@
-/* Base Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
     padding: 20px 10px;
 }
 
-/* Layout constraints - Now Responsive! */
 header, main, footer {
     width: 95%;
     max-width: 750px;
@@ -264,19 +263,82 @@ picture img{
     border-radius: 0.4rem;
 }
 
-@media(max-width:600px){
-    header img{
-        display: none;
-    }
-    .helper9{
-        display:flex;
-        flex-direction: column;
-    }
+
+ 
 
     li{
         margin:0 auto;
    
        
     }
+
+@media(max-width:600px){
+header {
+    background-color: #f8f8f8; 
+    position: relative;
+    padding: 20px;
+    height: auto; 
+    min-height: 100px;
 }
+
+
+header img {
+    display: block;
+}
+
+header img.hide {
+    display: none;
+}
+
+
+#menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    z-index: 10;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+
+nav {
+    display: none;
+}
+
+
+nav.open {
+    display: block;
+    width: 100%;
+}
+
+
+ul.helper9 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ul.helper9 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+}
+
 

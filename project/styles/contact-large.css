@@ -45,3 +45,7 @@
         order: unset;
     }
 }
+
+#menu{
+    display: none;
+}

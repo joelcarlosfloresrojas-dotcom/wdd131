@@ -8,7 +8,9 @@
     height: 450px; 
 }
 
-
+#menu{
+    display: none;
+}
 #hola {
     position: absolute;
     top: auto;
