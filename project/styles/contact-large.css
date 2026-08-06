@@ -44,8 +44,8 @@
         font-size: 1.1rem;
         order: unset;
     }
-}
-
-#menu{
+    #menu{
     display: none;
 }
+}
+

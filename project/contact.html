@@ -13,7 +13,7 @@
 <body>
     <header>
         <img src="../images/logo.jpg" alt="Discovering Cuzco Logo" height="100" width="100">
-        <button id="menu"></button>
+        <button id="menu" aria-label="Menu"></button>
         <nav>
             <ul class="helper9">
                 <li><a href="home.html">Home</a></li>
@@ -38,84 +38,83 @@
             <fieldset>
                 <legend>Information</legend>
                 <div class="flexer2">
-                <label for="fname">First Name*</label>
-                <input type="text id="fname" required>
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" required>
                 </div>
                 <div>
-                <label for="lname">Last Name*</label>
-                <input type="text" id="lname" required>
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" required>
                 </div>
                 <div>
-                <label for="email">e-mail*</label>
-                <input type="email" id="email" required>
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" required>
                 </div>
                 <div>
-                <label for="number">Phone Number*</label>
-                <input type="tel" id="number" required>
+                    <label for="number">Phone Number*</label>
+                    <input type="tel" id="number" required>
                 </div>
             </fieldset>
             <fieldset>
-            <legend>Message Purpose</legend>
-            
-            <div>
-                <input type="radio" name="purpose" value="general" id="purpose-general" required>
-                <label for="purpose-general">General Inquiry</label>
+                <legend>Message Purpose*</legend>
+                
+                <div>
+                    <input type="radio" name="purpose" value="general" id="purpose-general" required>
+                    <label for="purpose-general">General Inquiry</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="purpose" value="booking" id="purpose-booking" required>
+                    <label for="purpose-booking">Trip Booking</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="purpose" value="custom" id="purpose-custom" required>
+                    <label for="purpose-custom">Custom Tours & Group Travel</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="purpose" value="feedback" id="purpose-feedback" required>
+                    <label for="purpose-feedback">Feedback & Support</label>
+                </div>
+            </fieldset>
+            <div class="hidden1">
+                <label for="inquiry"></label>
+                <textarea name="general" id="inquiry" cols="30" rows="10" required></textarea>
             </div>
-            
-            <div>
-                <input type="radio" name="purpose" value="booking" id="purpose-booking">
-                <label for="purpose-booking">Trip Booking</label>
+            <div class="hidden2">
+                <label for="trip-date" required>Start Day of the Trip</label>
+                <input type="date" name="trip" id="trip-date" required>
             </div>
-            
-            <div>
-                <input type="radio" name="purpose" value="custom" id="purpose-custom">
-                <label for="purpose-custom">Custom Tours & Group Travel</label>
+            <div class="hidden3">
+                <label for="tourist"></label> 
+                <select name="tour" id="tourist" required>
+                    <option value="" id="placeholder" disabled selected>Select an option</option>
+                </select> 
             </div>
-            
-            <div>
-                <input type="radio" name="purpose" value="feedback" id="purpose-feedback">
-                <label for="purpose-feedback">Feedback & Support</label>
+            <div class="hidden4">
+                <label for="support"></label>
+                <textarea name="feedback" id="support" cols="30" rows="10" required></textarea>
             </div>
-        </fieldset>
-        <div class="hidden1">
-        <label for="general"></label>
-        <textarea name="general" id="inquiry" cols="30" rows="10"></textarea>
-        </div>
-        <div class="hidden2">
-        <label for="trip">Start Day of the Trip</label>
-        <input type="date" name="trip" id="trip-date" required>
-        </div>
-        <div class="hidden3">
-        <label for="tour"></label> 
-        <select name="tour" id="tourist" required>
-                <option value="" id="placeholder" disabled selected>Select an option</option>
-
-        </select> 
-        </div>
-        <div class="hidden4">
-        <label for="feedback"></label>
-        <textarea name="feedback" id="support" cols="30" rows="10"></textarea>
-        </div>
-        <fieldset>
-            <legend>How did you hear about Us?</legend>
-            <div>
-                <input type="checkbox" name="source" value="search-engine" id="source-search">                    
-                <label for="source-search">Search Engine (Google, Bing)</label>
-            </div>
-            <div>
-                <input type="checkbox" name="source" value="social-media" id="source-social">
-                <label for="source-social">Social Media (Instagram, TikTok, Facebook)</label>
-            </div>
-            <div>
-                <input type="checkbox" name="source" value="friend-family" id="source-friend">
-                <label for="source-friend">Recommended by Friend/Family</label>
-            </div>
-            <div>
-                <input type="checkbox" name="source" value="advertisement" id="source-ad">
-                <label for="source-ad">Online Advertisement</label>
-            </div>        
-        </fieldset>
-        <input type="submit" value="Get in touch" id="submit-button">
+            <fieldset>
+                <legend>How did you hear about Us?</legend>
+                <div>
+                    <input type="checkbox" name="source" value="search-engine" id="source-search">                    
+                    <label for="source-search">Search Engine (Google, Bing)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="source" value="social-media" id="source-social">
+                    <label for="source-social">Social Media (Instagram, TikTok, Facebook)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="source" value="friend-family" id="source-friend">
+                    <label for="source-friend">Recommended by Friend/Family</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="source" value="advertisement" id="source-ad">
+                    <label for="source-ad">Online Advertisement</label>
+                </div>        
+            </fieldset>
+            <input type="submit" value="Get in touch" id="submit-button">
         </form>
     </main>
 
@@ -123,8 +122,6 @@
         <p>&copy;Joel Flores Rojas Peru <span id="currentyear"></span> </p>
         <p id="lastModified"></p>
     </footer>
-
-
 
 </body>
 </html>
