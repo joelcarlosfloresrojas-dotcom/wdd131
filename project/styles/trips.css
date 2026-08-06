@@ -161,7 +161,7 @@ table tbody tr:hover {
     animation: fadeIn 0.5s ease-in-out; 
 }
 
-#btn-trip {
+#btn-trip,#btn-trip1 {
     display: block; 
     width: max-content; 
     margin: 20px auto; 
@@ -179,7 +179,10 @@ table tbody tr:hover {
     box-shadow: 0 6px 15px rgba(140, 59, 41, 0.25);
 }
 
-#btn-trip:hover {
+.hidden6{
+    display: block;
+}
+#btn-trip:hover,#btn-trip1:hover {
     background-color: #6a2a1d;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(140, 59, 41, 0.35);

@@ -30,6 +30,7 @@ const array_tour = [
   },
 ];
 
+const buttonr=document.getElementById('btn-trip1')
 const select=document.getElementById('option');
 array_tour.forEach((tour)=>{
 
@@ -38,6 +39,8 @@ array_tour.forEach((tour)=>{
     op.textContent=tour.name;
     select.appendChild(op);
 });
+
+const hidden6=document.querySelector('.hidden6')
 
 const sectionMap = {
     'Macchu Picchu': '.hidden',
@@ -48,7 +51,7 @@ const sectionMap = {
     'Another One' :'.hidden5'
 };
 function helper() {
-
+    hidden6.style.display ='block';
     const allTables = document.querySelectorAll('.hidden, .hidden1, .hidden2, .hidden3, .hidden4,.hidden5');
     allTables.forEach(table => {
         table.style.display = 'none';
@@ -57,12 +60,18 @@ function helper() {
     const selectedPlace = select.value;
     const tableClass = sectionMap[selectedPlace];
 
-    if (tableClass) {
+    
+    if(tableClass) {
         const tableToShow = document.querySelector(tableClass);
         if (tableToShow) {
             tableToShow.style.display = 'table'; 
         }
     }
+    if(selectedPlace=="Another One"){
+        hidden6.style.display ='none';
+        
+    }
+     
 }
 
 
