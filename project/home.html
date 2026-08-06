@@ -8,12 +8,12 @@
     <meta name="author" content="Joel Flores">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/home-large.css">
-     <script src="scripts/home.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
     <header>
         <img src="../images/logo.jpg" alt="Discovering Cuzco Logo" height="100" width="100">
-        <button id="menu"></button>
+        <button id="menu" aria-label="Menu"></button>
         <nav>
             <ul class="helper9">
                 <li><a href="home.html">Home</a></li>
@@ -26,37 +26,38 @@
     <main>
         <h1>Welcome to Discovering Cuzco</h1>
         <picture>
-            <source media="(min-width: 601px)" srcset="../images/city_cuzco.jpg"  height="400">
-            <img src="../images/small-cuzco.jpg" alt="Cuzco Family"  height="500">
+            <source media="(min-width: 601px)" srcset="../images/city_cuzco.jpg" height="400">
+            <img src="../images/small-cuzco.jpg" alt="Cuzco Family" height="500">
         </picture> 
-        <img src=>
         <p id="hola">Here at Discovering Cuzco, our passion is turning your dream trip into a reality. Join us to explore the magic of the Andes, and we guarantee you will have an amazing, unforgettable experience every step of the way.</p>
+        
         <h2>Explore the Rich History and Culture of Cuzco</h2>
         <div class="options">
             <figure>
-                <img src="../images/macchu_picchu.jpg" alt="Macchu Picchu">
+                <img src="../images/macchu_picchu.jpg" alt="Macchu Picchu" loading="lazy">
                 <figcaption>Macchu Picchu</figcaption>
                 <p>You'll feel profound awe exploring this mystical, ancient city hidden in the clouds.</p>
             </figure>
             <figure>
-                <img src="../images/inka_paths.jpg" alt="Inka Paths">
+                <img src="../images/inka_paths.jpg" alt="Inka Paths" loading="lazy">
                 <figcaption>Inka Paths</figcaption>
                 <p>You'll feel the thrill of adventure and a triumphant sense of achievement upon finishing the trek.</p>
             </figure>
             <figure>
-                <img src="../images/sacsayhuaman.jpg" alt="Sacsayhuaman">
+                <img src="../images/sacsayhuaman.jpg" alt="Sacsayhuaman" loading="lazy">
                 <figcaption>Sacsayhuaman</figcaption>
                 <p>You'll feel humbled and amazed standing beside the colossal stones of this massive fortress.</p>
             </figure>
         </div>
      
-    <div class="container">
-     <h3>Cuzco</h3>
-     <p>Cuzco, nestled high in the Peruvian Andes, was once the majestic capital of the Inca Empire. Today, this UNESCO World Heritage site is a vibrant blend of ancient cobblestone streets and Spanish colonial architecture, serving as the perfect gateway to explore the Sacred Valley and the legendary ruins of Machu Picchu.</p>
-    </div>
-    <div class="styler">
-        <div class="background">
-            <h4>Data</h4>
+        <div class="container">
+            <h3>Cuzco</h3>
+            <p>Cuzco, nestled high in the Peruvian Andes, was once the majestic capital of the Inca Empire. Today, this UNESCO World Heritage site is a vibrant blend of ancient cobblestone streets and Spanish colonial architecture, serving as the perfect gateway to explore the Sacred Valley and the legendary ruins of Machu Picchu.</p>
+        </div>
+        
+        <div class="styler">
+            <div class="background">
+                <h4>Data</h4>
                 <ul class="data-list">
                     <li><strong>Area:</strong> 71,986 sq km (Cusco Region)</li>
                     <li><strong>Population:</strong> ~450,000 (City)</li>
@@ -66,25 +67,24 @@
                     <li><strong>Calling Code:</strong> +51 (Peru) / 84 (Area Code)</li>
                     <li><strong>Internet TLD:</strong> .pe</li>
                 </ul>
-        </div>
-        <div class="background">
-            <h5>Weather</h5>
-            <img src="../images/partly_cloudy.svg" alt="Weather Icon" width="200" height="200">
+            </div>
+            <div class="background">
+                <h5>Weather</h5>
+                <img src="../images/partly_cloudy.svg" alt="Weather Icon" width="200" height="200" loading="lazy">
                 <ul class="data-list">
-                <li><strong>Temperature:</strong><span id="temperature">13°C</span></li>
+                    <li><strong>Temperature:</strong><span id="temperature">13°C</span></li>
                     <li><strong>Conditions:</strong> Sunny</li>
                     <li><strong>Wind:</strong><span id="speed">6.4 km/h</span></li>
                     <li><strong>Wind Chill:</strong><span id="chill"></span></li>
                 </ul>
-        </div> 
-    </div>
+            </div> 
+        </div>
 
-
-    <a href="trips.html" id="btn-trip" class="btn">Schedule Your Trip now!</a>
+        <a href="trips.html" id="btn-trip" class="btn">Schedule Your Trip now!</a>
     
     </main>
 
-     <footer>
+    <footer>
         <p>&copy;Joel Flores Rojas Peru <span id="currentyear"></span> </p>
         <p id="lastModified"></p>
     </footer>
