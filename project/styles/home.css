@@ -147,7 +147,8 @@ figure:hover {
     margin-bottom: 12px;
 }
 
-figcaption {
+.caption-title {
+    display: block;
     font-weight: bold;
     color: #1e3a8a;
     font-size: 1.1rem;
@@ -206,7 +207,7 @@ h4, h5 {
     margin-top: 15px;
 }
 
-.weather-icon {
+.background img {
     display: block;
     margin: 15px auto 0;
     width: 120px;
@@ -245,14 +246,14 @@ footer {
     margin-top: 40px; 
 }
 
-picture img{
+picture img {
     width: 80%;
     display: block;
     margin: 0 auto;
     border-radius: 0.4rem;
 }
 
-@media(max-width:600px){
+@media (max-width: 600px) {
     header {
         background-color: #f8f8f8; 
         position: relative;
