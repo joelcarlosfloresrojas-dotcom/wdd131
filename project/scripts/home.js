@@ -1,19 +1,29 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-const Temperature = document.querySelector('#temperature');
-const Speed = document.querySelector('#speed');
-const Chill = document.querySelector('#chill');
+const elevationEl = document.querySelector('#elevation');
+const oxygenEl = document.querySelector('#oxygen-level');
+const recEl = document.querySelector('#recommendation');
 
-const NTemperature1 = parseFloat(Temperature.textContent);
-const NSpeed1 = parseFloat(Speed.textContent);
+const altitude = parseFloat(elevationEl.textContent);
 
-if (NTemperature1 <= 10 && NSpeed1 > 4.8) {
-    const windChill = 13.12 + (0.6215 * NTemperature1) - (11.37 * Math.pow(NSpeed1, 0.16)) + (0.3965 * NTemperature1 * Math.pow(NSpeed1, 0.16));
-    Chill.textContent = windChill.toFixed(1) + " °C";
-} else {
-    Chill.textContent = "N/A";
+function calculateOxygen(meters) {
+    const oxygen = (100 - (meters * 0.0094)).toFixed(1) + "%";
+    
+    let advice = "Normal activity";
+    if (meters > 3000) {
+        advice = "Rest 24h & drink Coca Tea";
+    } else if (meters > 2000) {
+        advice = "Light walks recommended";
+    }
+
+    return { oxygen, advice };
 }
+
+const data = calculateOxygen(altitude);
+
+oxygenEl.textContent = data.oxygen;
+recEl.textContent = data.advice;
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu');
